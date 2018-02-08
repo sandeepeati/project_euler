@@ -10,7 +10,7 @@ def is_prime(num, primes_list):
     for prime in primes_list:
         if num % prime == 0:
             return False
-        return True
+    return True
 
 
 # generating primes
