@@ -10,17 +10,6 @@ from primes import primes_gen
 prime_factors = []
 
 
-def is_prime(num):
-    factors = []
-
-    if num == 1:
-        return False
-    for n in range(2, (num//2) + 1):
-        if num % n == 0:
-            factors.append(n)
-    return True if len(factors) == 0 else False
-
-
 def prime_factorization(num):
     for prime in primes_gen(num):
         if num % prime == 0:
